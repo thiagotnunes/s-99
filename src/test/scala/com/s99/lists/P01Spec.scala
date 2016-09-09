@@ -4,18 +4,18 @@ import org.specs2.mutable.Specification
 
 class P01Spec extends Specification {
 
-  val p01 = new P01
+  val problem = new P01
 
   "returns last element of the list" in {
-    p01.last(List(1, 2, 3, 4)) ==== Some(4)
+    problem.last(List(1, 2, 3, 4)) ==== Some(4)
   }
 
   "returns the element of a single element list" in {
-    p01.last(List(2)) ==== Some(2)
+    problem.last(List(2)) ==== Some(2)
   }
 
-  "return null when the list is empty" in {
-    p01.last(List()) ==== None
+  "return None when the list is empty" in {
+    problem.last(List()) ==== None
   }
 
 }
