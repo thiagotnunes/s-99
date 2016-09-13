@@ -1,8 +1,11 @@
 package com.s99.lists
 
+import scala.annotation.tailrec
+
 class P02 {
 
-  def penultimate[T](xs: List[T]): Option[T] = {
+  @tailrec
+  final def penultimate[T](xs: List[T]): Option[T] = {
     xs match {
       case Seq() => None
       case y +: ys if ys.size == 1 => Some(y)
