@@ -14,8 +14,8 @@ class P04 {
   @tailrec
   private final def length[T](acc: Int, xs: List[T]): Int = {
     xs match {
-      case Seq() => acc
-      case y +: ys => length(acc + 1, ys)
+      case Nil => acc
+      case y :: ys => length(acc + 1, ys)
     }
   }
 }

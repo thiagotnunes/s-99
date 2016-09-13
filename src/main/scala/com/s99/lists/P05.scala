@@ -14,8 +14,8 @@ class P05 {
   @tailrec
   private def reverse[T](acc: List[T], xs: List[T]): List[T] = {
     xs match {
-      case Seq() => acc
-      case y +: ys => reverse(y +: acc, ys)
+      case Nil => acc
+      case y :: ys => reverse(y +: acc, ys)
     }
   }
 
