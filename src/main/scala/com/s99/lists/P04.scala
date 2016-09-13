@@ -4,6 +4,9 @@ import scala.annotation.tailrec
 
 class P04 {
 
+  // n is the number of elements on the list
+  // Time complexity - O(n)
+  // Space complexity - O(1), since it is tail recursive
   def length[T](xs: List[T]): Int = {
     length(0, xs)
   }

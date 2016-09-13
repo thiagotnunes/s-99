@@ -4,6 +4,9 @@ import scala.annotation.tailrec
 
 class P03 {
 
+  // n is the number of elements on the list
+  // Time complexity - O(n)
+  // Space complexity - O(1), since it is tail recursive
   @tailrec
   final def nth[T](i: Int, xs: List[T]): Option[T] = {
     xs match {
