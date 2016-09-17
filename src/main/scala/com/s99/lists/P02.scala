@@ -2,9 +2,11 @@ package com.s99.lists
 
 import scala.annotation.tailrec
 
+/**
+  * n is the number of elements in the list
+  */
 class P02 {
 
-  // n is the number of elements in the list
   // Time complexity - O(n)
   // Space complexity - O(1), since it is tail recursive
   @tailrec

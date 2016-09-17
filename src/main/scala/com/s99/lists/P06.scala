@@ -2,18 +2,19 @@ package com.s99.lists
 
 import scala.annotation.tailrec
 
+/**
+  * n is the number of elements in the list
+  */
 class P06 {
 
   def isPalindrome[T] = isPalindromeV2[T] _
 
-  // n is the number of elements on the list
   // Time complexity - O(n) (reverse)
   // Space complexity - O(n) (for the reversed list)
   def isPalindromeV1[T](xs: List[T]): Boolean = {
     xs == xs.reverse
   }
 
-  // n is the number of elements in the list
   // Time complexity - O(n)
   // Space complexity - O(1)
   def isPalindromeV2[T](xs: List[T]): Boolean = {
