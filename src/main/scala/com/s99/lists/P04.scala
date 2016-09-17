@@ -7,17 +7,23 @@ import scala.annotation.tailrec
   */
 class P04 {
 
+  def length[T] = lengthV2[T] _
+
   // Time complexity - O(n)
   // Space complexity - O(1), since it is tail recursive
-  def length[T](xs: List[T]): Int = {
-    length(0, xs)
+  def lengthV1[T](xs: List[T]): Int = {
+    @tailrec
+    def lengthV1(acc: Int, xs: List[T]): Int = {
+      xs match {
+        case Nil => acc
+        case y :: ys => lengthV1(acc + 1, ys)
+      }
+    }
+
+    lengthV1(0, xs)
   }
 
-  @tailrec
-  private final def length[T](acc: Int, xs: List[T]): Int = {
-    xs match {
-      case Nil => acc
-      case y :: ys => length(acc + 1, ys)
-    }
+  def lengthV2[T](xs: List[T]): Int = {
+    xs.foldLeft(0)((acc, _) => acc + 1)
   }
 }

@@ -10,15 +10,14 @@ class P05 {
   // Time complexity - O(n)
   // Space complexity - O(1), since it is tail recursive
   def reverse[T](xs: List[T]): List[T] = {
+    @tailrec
+    def reverse(acc: List[T], xs: List[T]): List[T] = {
+      xs match {
+        case Nil => acc
+        case y :: ys => reverse(y +: acc, ys)
+      }
+    }
+
     reverse(List(), xs)
   }
-
-  @tailrec
-  private def reverse[T](acc: List[T], xs: List[T]): List[T] = {
-    xs match {
-      case Nil => acc
-      case y :: ys => reverse(y +: acc, ys)
-    }
-  }
-
 }
