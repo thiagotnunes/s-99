@@ -6,7 +6,7 @@ import scala.annotation.tailrec
   * n is the number of elements in the input list
   *
   * - compressV1
-  *   + Time recursive
+  *   + Tail recursive
   *   + Time complexity - O(n)
   *   + Space complexity - O(n) (for the accumulator, since it is tail recursive)
   *
