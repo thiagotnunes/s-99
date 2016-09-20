@@ -4,19 +4,25 @@ import scala.annotation.tailrec
 
 /**
   * n is the number of elements in the list
+  *
+  * - isPalindromeV1
+  *   + Iterative method
+  *   + Time complexity - O(n)
+  *   + Space complexity - O(n) (for the reversed list)
+  *
+  * - isPalindromeV2
+  *   + Tail recursive
+  *   + Time complexity - O(n)
+  *   + Space complexity - O(1)
   */
 class P06 {
 
   def isPalindrome[T] = isPalindromeV2[T] _
 
-  // Time complexity - O(n) (reverse)
-  // Space complexity - O(n) (for the reversed list)
   def isPalindromeV1[T](xs: List[T]): Boolean = {
     xs == xs.reverse
   }
 
-  // Time complexity - O(n)
-  // Space complexity - O(1)
   def isPalindromeV2[T](xs: List[T]): Boolean = {
     val start = 0
     val end = xs.length - 1

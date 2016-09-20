@@ -28,9 +28,9 @@ class P08 {
     @tailrec
     def compressV1(xs: List[T], acc: List[T]): List[T] = {
       xs match {
-        case Nil => acc.reverse // O(n)
-        case y :: ys if acc.headOption.contains(y) => compressV1(ys, acc) // O(1) + O(1) = O(1)
-        case y :: ys => compressV1(ys, y :: acc) // O(1)
+        case Nil => acc.reverse
+        case y :: ys if acc.headOption.contains(y) => compressV1(ys, acc)
+        case y :: ys => compressV1(ys, y :: acc)
       }
     }
 

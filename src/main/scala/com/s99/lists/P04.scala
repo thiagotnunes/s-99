@@ -4,13 +4,21 @@ import scala.annotation.tailrec
 
 /**
   * n is the number of elements in the list
+  *
+  * - lengthV1
+  *   + Tail recursive
+  *   + Time complexity - O(n)
+  *   + Space complexity - O(1)
+  *
+  * - lengthV2
+  *   + Tail recursive
+  *   + Time complexity - O(n)
+  *   + Space complexity - O(1)
   */
 class P04 {
 
   def length[T] = lengthV2[T] _
 
-  // Time complexity - O(n)
-  // Space complexity - O(1), since it is tail recursive
   def lengthV1[T](xs: List[T]): Int = {
     @tailrec
     def lengthV1(acc: Int, xs: List[T]): Int = {

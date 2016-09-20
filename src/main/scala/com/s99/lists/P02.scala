@@ -4,11 +4,14 @@ import scala.annotation.tailrec
 
 /**
   * n is the number of elements in the list
+  *
+  * - penultimate
+  *   + Tail recursive
+  *   + Time complexity - O(n)
+  *   + Space complexity - O(1)
   */
 class P02 {
 
-  // Time complexity - O(n)
-  // Space complexity - O(1), since it is tail recursive
   @tailrec
   final def penultimate[T](xs: List[T]): Option[T] = {
     xs match {
