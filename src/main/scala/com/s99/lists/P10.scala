@@ -3,7 +3,6 @@ package com.s99.lists
 import scala.annotation.tailrec
 
 /**
-  *
   * n is the number of elements in the input list
   *
   * - encodeV1
