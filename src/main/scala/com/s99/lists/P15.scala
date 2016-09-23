@@ -4,6 +4,7 @@ import scala.annotation.tailrec
 
 /**
   * n is the number of elements in the input list
+  * k is how many replicas should be made (argument to the function)
   *
   * - duplicateNV1
   *   + Tail recursive
