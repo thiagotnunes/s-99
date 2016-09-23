@@ -1,33 +1,34 @@
 package com.s99.lists
 
 import scala.annotation.tailrec
+
 /**
   * n is the number of elements in the input list
   *
   * - duplicateV1
-  *   + Tail recusive
-  *   + Time complexity - O(n)
-  *   + Space complexity - O(n)
+  * + Tail recusive
+  * + Time complexity - O(n)
+  * + Space complexity - O(n)
   *
   * - duplicateV2
-  *   + Tail recursive
-  *   + Time complexity - O(n)
-  *   + Space complexity - O(n)
+  * + Tail recursive
+  * + Time complexity - O(n)
+  * + Space complexity - O(n)
   *
   * - duplicateV3
-  *   + NOT tail recursive
-  *   + Time complexity - O(n)
-  *   + Space complexity - O(n)
+  * + NOT tail recursive
+  * + Time complexity - O(n)
+  * + Space complexity - O(n)
   *
   * - duplicateV4
-  *   + Tail recursive
-  *   + Time complexity - O(n)
-  *   + Space complexity - O(n)
+  * + Tail recursive
+  * + Time complexity - O(n)
+  * + Space complexity - O(n)
   *
   * - duplicateV5
-  *   + NOT tail recursive
-  *   + Time complexity - O(n)
-  *   + Space complexity - O(n)
+  * + NOT tail recursive
+  * + Time complexity - O(n)
+  * + Space complexity - O(n)
   */
 class P14 {
 
