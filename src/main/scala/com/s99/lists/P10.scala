@@ -32,6 +32,6 @@ class P10(packer: P09) {
       }
     }
 
-    encodeV2(packer.pack(xs), List.empty[(Int, T)])
+    encodeV2(packer.pack(xs), List.empty[(Int, T)]).reverse
   }
 }
