@@ -33,6 +33,6 @@ class P12 {
       }
     }
 
-    decodeV2(xs, List.empty[T])
+    decodeV2(xs, List.empty[T]).reverse
   }
 }
